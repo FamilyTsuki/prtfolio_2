@@ -1,0 +1,19 @@
+body {
+    background-image: url("fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* empêche le défilement horizontal */
+    margin: 0;
+    animation: zoom 1s ease 0s 1 normal forwards;
+}
+@keyframes zoom {
+	0% {
+		background-position: center bottom;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: center bottom;
+		background-size: 350%;
+	}
+}

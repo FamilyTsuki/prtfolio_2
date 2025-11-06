@@ -1,192 +1,170 @@
-
-
 body {
     background-image: url("fond.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    overflow-x: hidden; /* empêche le défilement horizontal */
+    margin: 0;
+    
 }
 
-
-
-div.premier {
-    p{
-        padding: 70px;
-        transform: rotate(10deg);
-        padding: 20px ;
-        transition: transform 0.7s ease;
-    }
-    img {
-        position: absolute;
-        height: 120px;
-        width: 280px;
-        transition: transform 0.4s ease;
-    }
-}
-div.deuxieme {
-    p{
-        
-        transform: rotate(-10deg);
-        padding: 20px ;
-        transition: transform 0.7s ease;
-    }
-    img {
-        position: absolute;
-        height: 80px;
-        width: 180px;
-        transition: transform 0.4s ease;
-    }
-}
-div.quatrieme {
-    p{
-        padding: 70px;
-        transform: rotate(10deg);
-        padding: 20px ;
-        transition: transform 0.7s ease;
-    }
-    img {
-        position: absolute;
-        height: 120px;
-        width: 280px;
-        transition: transform 0.4s ease;
-    }
-}
-div.cinquieme {
-    p{
-        
-        transform: rotate(-10deg);
-        padding: 20px ;
-        transition: transform 0.7s ease;
-    }
-    img {
-        position: absolute;
-        height: 160px;
-        width: 320px;
-        transition: transform 0.4s ease;
-    }
-}
-div.troisieme {
-    p{
-        
-        transform: rotate(-10deg);
-        padding: 40px ;
-        transition: transform 0.7s ease;
-    }
-    img {
-        position: absolute;
-        height: 336px;
-        width: 743px;
-    transition: transform 1.4s ease;
-
-    }
-}
-
-
-
-
-
-
-div.premier{
+/* === PREMIER === */
+div.premier img {
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 5%;
-    font-size: 20px;
+    height: 120px;
+    width: 280px;
+    transition: transform 0.4s ease;
+}
+
+div.premier p {
+    position: absolute;
+    top: 4%;
+    left: 9%;
+    transform: rotate(10deg);
+    transition: transform 0.7s ease;
+    font-size: 40px;
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
-div.deuxieme{
+
+/* === DEUXIEME === */
+div.deuxieme img {
+    position: absolute;
+    top: 48%;
+    left: 2%;
+    height: 80px;
+    width: 180px;
+    transition: transform 0.4s ease;
+}
+
+div.deuxieme p {
     position: absolute;
     top: 35%;
     left: 2%;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-}
-div.quatrieme{
-    position: absolute;
-    top: 7%;
-    left: 78%;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    
-}
-div.cinquieme{
-    position: absolute;
-    top: 45%;
-    left: 83%;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    
-}
-div.troisieme p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 20px;
+    transform: rotate(-10deg);
+    transition: transform 0.7s ease;
+    font-size: 40px;
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
 
+/* === TROISIEME === */
 div.troisieme img {
     position: absolute;
-    height: 336px;
-    width: 743px;
     top: 42%;
     left: 50%;
+    height: 336px;
+    width: 743px;
     transform: translate(-48%, -50%);
+    transition: transform 1.4s ease;
 }
 
+div.troisieme p {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    transition: transform 0.7s ease;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
 
+/* === QUATRIEME === */
+div.quatrieme img {
+    position: absolute;
+    top: 17%;
+    left: 78%;
+    height: 120px;
+    width: 280px;
+    transition: transform 0.4s ease;
+}
 
+div.quatrieme p {
+    position: absolute;
+    top: 6%;
+    left: 79%;
+    transform: rotate(10deg);
+    transition: transform 0.7s ease;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
 
+/* === CINQUIEME === */
+div.cinquieme img {
+    position: absolute;
+    top: 55%;
+    left: 79%;
+    height: 160px;
+    width: 320px;
+    transition: transform 0.4s ease;
+}
 
+div.cinquieme p {
+    position: absolute;
+    top: 42%;
+    left: 86%;
+    transform: rotate(-10deg);
+    transition: transform 0.7s ease;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
 
+/* === EFFETS AU SURVOL === */
 div.premier:hover {
-    img{
-        transform-origin:center center ;
-        transform: scale(1.1) rotate(5deg)  ;
+    img {
+    transform-origin: center center;
+    transform: scale(1.1) rotate(5deg);
     }
-    p{
+    p {
         transform-origin: 80px 350px;
         transform: rotate(-5deg);
-    }  
+    }
 }
+
 div.deuxieme:hover {
-    img{
-        transform-origin:center center ;
-        transform: scale(1.1) rotate(-5deg) ;
+    img {
+    transform-origin: center center;
+    transform: scale(1.1) rotate(-5deg);
     }
-    p{
+    p {
         transform-origin: 0px 300px;
         transform: rotate(15deg);
-    } 
-}
-div.quatrieme:hover {
-    
-    img{
-        
-        transform-origin:center center ;
-        transform: scale(1.1) rotate(5deg)  ;
     }
-    p{
+}
+
+div.quatrieme:hover {
+    img {
+    transform-origin: center center;
+    transform: scale(1.1) rotate(5deg);
+    }
+    p {
         transform-origin: 80px 350px;
         transform: rotate(-5deg);
-    }  
-}
-div.cinquieme:hover {
-    img{
-        transform-origin:center center ;
-        transform: scale(1.1) rotate(-5deg) ;
     }
-    p{
+}
+
+
+div.cinquieme:hover {
+    img {
+    transform-origin: center center;
+    transform: scale(1.1) rotate(-5deg);
+    }
+    p {
         transform-origin: 0px 300px;
         transform: rotate(15deg);
-    } 
+    }
 }
 
 div.troisieme:hover img {
     transform: translate(-48%, -50%) scale(1.03);
-    
 }
+div.troisieme:hover p {
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+}
+

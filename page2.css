@@ -1,57 +1,98 @@
 
-
 body {
-    max-width: 90%;
-    margin: 0 auto;
-    background-color: #ecf0f1;
-    padding: 2%;
-    font-family: 'Arial', sans-serif;
+    background-image: url("fond2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* empêche le défilement horizontal */
+    margin: 0;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+
+h1 {
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 3%;
     color: #2c3e50;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    display: block;
+    width: 10%;
+    height: 10%;
+}
+.github-link {
+    display: block;
+    text-align: center;
+    font-size: calc(0.8em + 0.5vw);
+    color: #3498db;
+    text-decoration: none;
+    margin: 2% 0;
+    padding: 1%;
+}
+
+.github-link:hover {
+    color: #2980b9;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: center;
+    margin-top: 4%;
 }
 
 .skills-container {
-    width: 80%;
-    min-height: 60vh;
-    background: #ffffff;
-    border-radius: 2%;
-    padding: 4%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-h1 {
-    font-size: calc(1.5em + 2vw);
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 3%;
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-}
-
-p {
-    font-size: 120%;
-    color: #2c3e50;
-    text-align: center;
-    font-weight: 600;
-    margin: 3%;
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-}
- 
-div {
-    margin: 6% auto;
-    padding: 5%;
+    flex: 1;
+    min-width: 30%;
+    max-width: 45%;
+    margin: 2%;
     background: white;
-    border-radius: 3%;
+    border-radius: 20%;
+    padding: 2%;
+    box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 70%;
-    text-align: center;
-    font-size: 100%;
-}
-div:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
 }
 
-h2 {
-    font-size: 100%;
-    color: #34495e;
-    margin-bottom: 2%;
+.skills-container:hover {
+    transform: translateY(-2%);
+}
+
+.skills-container h2 {
+    font-size: calc(1em + 0.5vw);
+    color: #2c3e50;
+    margin-bottom: 3%;
+}
+
+.skills-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
+    margin-bottom: 3%;
+}
+
+.skills-container p {
+    font-size: 90%;
+    color: #484848;
+    line-height: 1.6;
+}
+.skills-container a {
+    display: inline-block;
+    margin-top: 3%;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+@keyframes myAnim {
+	0% {
+		background-position: 50% 100%;
+	}
+
+	100% {
+		background-position: 50% 0%;
+	}
 }

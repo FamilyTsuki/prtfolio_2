@@ -17,7 +17,15 @@ div.premier img {
     width: 280px;
     transition: transform 0.4s ease;
 }
+div.dev img {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    height: 77px;
+    width: 660px;
+    transform: translate(-46%, -50%);
 
+}
 div.premier p {
     position: absolute;
     top: 4%;

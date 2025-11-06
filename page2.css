@@ -6,8 +6,8 @@ body {
     overflow-x: hidden; /* empêche le défilement horizontal */
     margin: 0;
     animation: myAnim 1s ease 0s 1 normal forwards;
-
-img{
+}
+div.ima img{
     z-index: -1;
     transform: translate(-48%, -50%);
     position: absolute;
@@ -15,16 +15,44 @@ img{
     left: 50%;
     height: 320px;
     width: 720px;
-    
-}
-}
-img{
     animation: riseUp 1s ease forwards;
-    
 }
-h1, section {
+
+h1, section{
     animation: riseUp2 1s ease forwards;
 }
+
+div.premier img {
+    position: absolute;
+    top: 6%;
+    left: 75%;
+    height: 120px;
+    width: 280px;
+    transition: transform 0.4s ease;
+    
+}
+
+div.premier p {
+    position: absolute;
+    top: -6%;
+    left: 82%;
+    transform: rotate(10deg);
+    transition: transform 0.7s ease;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+div.premier:hover img {
+    transform-origin: center center;
+    transform: scale(1.1) rotate(5deg);
+}
+
+div.premier:hover p {
+    transform-origin: 80px 350px;
+    transform: rotate(-5deg);
+}
+
+
 h1 {
     
     z-index: 2;
